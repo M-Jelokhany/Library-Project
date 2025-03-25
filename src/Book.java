@@ -3,7 +3,7 @@ public class Book {
     private int pageCount;
 
     public Book(String title , int pageCount){
-        if(title.isEmpty()){
+        if(title == null || title.isEmpty()){
             throw  new IllegalArgumentException("Title cannot be empty");
         }
         if(!(pageCount > 0)){

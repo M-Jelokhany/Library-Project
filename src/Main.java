@@ -15,25 +15,25 @@ public class Main {
 
         try{
             book1 = new Book("Java Programming", 300);
-        }catch (NullPointerException | IllegalArgumentException e){
+        }catch (IllegalArgumentException e){
             System.out.println(e.getMessage());
         }
 
         try{
             book2 = new Book("Design Patterns", -3);
-        }catch (NullPointerException | IllegalArgumentException e){
+        }catch (IllegalArgumentException e){
             System.out.println(e.getMessage());
         }
 
         try {
             book3 = new Book(null, 100);
-        }catch (NullPointerException | IllegalArgumentException e) {
+        }catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
 
         try {
             book4 = new Book("", 400);
-        }catch (NullPointerException | IllegalArgumentException e) {
+        }catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
 

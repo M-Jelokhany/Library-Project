@@ -37,6 +37,7 @@ public class Library {
         if(findBook(title) == null){
             throw new BookNotFoundException("Cannot return . Book with title " + title + " not found");
         }
+        System.out.println("Book " + findBook(title).toString() + " was successfully returned");
     }
 
     public void listBooks() throws EmptyLibraryException{
